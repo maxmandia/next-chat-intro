@@ -18,28 +18,17 @@ import SendIcon from "@mui/icons-material/Send";
 export default function Chat() {
   return (
     <div>
-      <Grid container component={Paper} padding={5}>
+      <Grid container item xs={12} component={Paper} padding={5}>
         <Grid item xs={6}>
           <Typography variant="h4">Haschat</Typography>
         </Grid>
-        <Grid item xs={6} textAlign="right">
+        <Grid item xs={6} textAlign="right" spacing={10}>
+          <Button variant="contained">Send Message</Button>
           <Button variant="contained">0x73..7db4</Button>
         </Grid>
       </Grid>
-      <Grid container padding={5}>
+      <Grid container padding={3}>
         <Grid item xs={3}>
-          <List>
-            <ListItem button key="RemySharp">
-              <ListItemIcon>
-                <Avatar
-                  alt="Remy Sharp"
-                  src="https://material-ui.com/static/images/avatar/1.jpg"
-                />
-              </ListItemIcon>
-              <ListItemText primary="My Wallet"></ListItemText>
-            </ListItem>
-          </List>
-          <Divider />
           <Grid item xs={12} style={{ padding: "10px" }}>
             <TextField
               id="outlined-basic-email"
